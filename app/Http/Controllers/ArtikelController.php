@@ -84,7 +84,7 @@ class ArtikelController extends Controller
         'author' => $request->author,
         'slug' => $slug,
         'deskripsi' => $request->deskripsi,
-        'gambar' =>  $path_image,
+        'image' =>  $path_image,
         'content' => $request->content
       ]);
 
@@ -119,7 +119,7 @@ class ArtikelController extends Controller
         'author' => $request->author,
         'slug' => $slug,
         'deskripsi' => $request->deskripsi,
-        'image' => !empty($file) ? $path_image : $artikel_lama->gambar,
+        'image' => !empty($file) ? $path_image : $artikel_lama->image,
         'content' => $request->content
       ]);
 
