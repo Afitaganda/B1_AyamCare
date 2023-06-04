@@ -19,7 +19,7 @@
         <a href="/artikel/{{ $article->id_artikel }}" class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg">
           <h2 class="text-xl font-bold mb-4 h-14 line-clamp-2 ">{{ $article->title }}</h2>
           <p class="text-gray-600 mb-4">{{ $article->author }}</p>
-          <img src="{{ $article->gambar }}" alt="{{ $article->title }}" class="w-full h-[16rem] object-cover mb-4">
+          <img src="{{ $article->image }}" alt="{{ $article->title }}" class="w-full h-[16rem] object-cover mb-4">
           <p class=" font-roboto font-medium text-neutral-600 ">{{ $article->deskripsi }}</p>
           {{-- {!! $article->content !!} --}}
         </a>

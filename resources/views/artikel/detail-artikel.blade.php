@@ -27,7 +27,7 @@
     <div class="max-w-3xl mx-auto">
       <h1 class="text-3xl font-bold mb-4">{{ $detail_artikel->title }}</h1>
       <p class="text-gray-600 mb-4">By {{ $detail_artikel->author }}</p>
-      <img src="{{ $detail_artikel->gambar }}" alt="{{ $detail_artikel->title }}" class="w-full max-h-[40rem] object-cover mb-6">
+      <img src="{{ $detail_artikel->image }}" alt="{{ $detail_artikel->title }}" class="w-full max-h-[40rem] object-cover mb-6">
       <p class="text-lg text-gray-800 mb-4">{{ $detail_artikel->description }}</p>
       <div class="prose max-w-none mb-6">
         {!! $detail_artikel->content !!}
@@ -76,7 +76,7 @@
       <div class="flex flex-col gap-6 lg:w-[60rem] md:w-[40rem] sm:w-[30rem]">
         @foreach ($recommend_artikel as $recommendedArticle)
           <div class="bg-white shadow-md flex sm:flex-row sm:items-start flex-col items-center rounded-lg p-6 gap-6">
-            <img src="{{ $recommendedArticle->gambar }}" class="sm:w-[15rem] max-h-[12rem] object-cover w-full" alt="">
+            <img src="{{ $recommendedArticle->image }}" class="sm:w-[15rem] max-h-[12rem] object-cover w-full" alt="">
             <div class="flex flex-col">
               <h3 class="text-lg font-bold mb-2">{{ $recommendedArticle->title }}</h3>
               <p class="text-gray-600 mb-4">By {{ $recommendedArticle->author }}</p>

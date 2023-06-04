@@ -38,7 +38,7 @@
         <h2 class="text-lg">Pesan!</h2>
         <p class="text-sm font-light text-neutral-400 w-[10rem]">{{ session()->get('pesan') }}</p>
         <a href="/harga-harian"
-          class="py-1 w-[7rem] text-center bg-red-500 text-white hover:text-red-500 hover:bg-white rounded-md hover:shadow-md hover:shadow-red-500/50">tutup</a>
+          class="py-1 w-[7rem] text-center bg-red-500 text-white hover:text-red-500 hover:bg-white rounded-md hover:shadow-md hover:shadow-red-500/50">Tutup</a>
       </div>
     </div>
     {{ session()->forget('pesan') }}
