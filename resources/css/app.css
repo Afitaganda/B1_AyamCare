@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300;400;500;600&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tilt+Prism&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ul, ol {
+    list-style: revert;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #99f6e4;
+  overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f766e;
+  border-radius: 7px;
+}
